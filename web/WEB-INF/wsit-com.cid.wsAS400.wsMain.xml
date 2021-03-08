@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="wsMain" targetNamespace="http://wsAS400.cid.com/" xmlns:tns="http://wsAS400.cid.com/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" 
+ >
+    <message name="traerListaGuias"/>
+    <message name="traerListaGuiasResponse"/>
+    <message name="traerArchivoVentas"/>
+    <message name="traerArchivoVentasResponse"/>
+    <message name="traerValidacionShipment"/>
+    <message name="traerValidacionShipmentResponse"/>
+    <message name="erroresCuentasPorCobrar"/>
+    <message name="erroresCuentasPorCobrarResponse"/>
+    <message name="obtenerCostos"/>
+    <message name="obtenerCostosResponse"/>
+    <message name="insertUpdateCliente"/>
+    <message name="insertUpdateClienteResponse"/>
+    <message name="getCliente"/>
+    <message name="getClienteResponse"/>
+    <message name="consultaNaturaleza"/>
+    <message name="consultaNaturalezaResponse"/>
+    <message name="updateNaturaleza"/>
+    <message name="updateNaturalezaResponse"/>
+    <message name="consultaRetencion"/>
+    <message name="consultaRetencionResponse"/>
+    <message name="updateRetencion"/>
+    <message name="updateRetencionResponse"/>
+    <message name="getProvincia"/>
+    <message name="getProvinciaResponse"/>
+    <message name="getCanton"/>
+    <message name="getCantonResponse"/>
+    <message name="getParroquia"/>
+    <message name="getParroquiaResponse"/>
+    <message name="getOrdenPedido"/>
+    <message name="getOrdenPedidoResponse"/>
+    <message name="getComprobantesRetencion"/>
+    <message name="getComprobantesRetencionResponse"/>
+    <message name="getCias"/>
+    <message name="getCiasResponse"/>
+    <message name="getCiasUsuario"/>
+    <message name="getCiasUsuarioResponse"/>
+    <message name="getTaxRetencionCliente"/>
+    <message name="getTaxRetencionClienteResponse"/>
+    <message name="UpdateTaxRetencionCliente"/>
+    <message name="UpdateTaxRetencionClienteResponse"/>
+    <message name="insertTaxRetencionCliente"/>
+    <message name="insertTaxRetencionClienteResponse"/>
+    <message name="getClientes"/>
+    <message name="getClientesResponse"/>
+    <message name="getTipoInventario"/>
+    <message name="getTipoInventarioResponse"/>
+    <message name="getCountLog"/>
+    <message name="getCountLogResponse"/>
+    <message name="test"/>
+    <message name="testResponse"/>
+    <portType name="wsMain">
+        <operation name="traerListaGuias">
+            <input message="tns:traerListaGuias"/>
+            <output message="tns:traerListaGuiasResponse"/>
+        </operation>
+        <operation name="traerArchivoVentas">
+            <input message="tns:traerArchivoVentas"/>
+            <output message="tns:traerArchivoVentasResponse"/>
+        </operation>
+        <operation name="traerValidacionShipment">
+            <input message="tns:traerValidacionShipment"/>
+            <output message="tns:traerValidacionShipmentResponse"/>
+        </operation>
+        <operation name="erroresCuentasPorCobrar">
+            <input message="tns:erroresCuentasPorCobrar"/>
+            <output message="tns:erroresCuentasPorCobrarResponse"/>
+        </operation>
+        <operation name="obtenerCostos">
+            <input message="tns:obtenerCostos"/>
+            <output message="tns:obtenerCostosResponse"/>
+        </operation>
+        <operation name="insertUpdateCliente">
+            <input message="tns:insertUpdateCliente"/>
+            <output message="tns:insertUpdateClienteResponse"/>
+        </operation>
+        <operation name="getCliente">
+            <input message="tns:getCliente"/>
+            <output message="tns:getClienteResponse"/>
+        </operation>
+        <operation name="consultaNaturaleza">
+            <input message="tns:consultaNaturaleza"/>
+            <output message="tns:consultaNaturalezaResponse"/>
+        </operation>
+        <operation name="updateNaturaleza">
+            <input message="tns:updateNaturaleza"/>
+            <output message="tns:updateNaturalezaResponse"/>
+        </operation>
+        <operation name="consultaRetencion">
+            <input message="tns:consultaRetencion"/>
+            <output message="tns:consultaRetencionResponse"/>
+        </operation>
+        <operation name="updateRetencion">
+            <input message="tns:updateRetencion"/>
+            <output message="tns:updateRetencionResponse"/>
+        </operation>
+        <operation name="getProvincia">
+            <input message="tns:getProvincia"/>
+            <output message="tns:getProvinciaResponse"/>
+        </operation>
+        <operation name="getCanton">
+            <input message="tns:getCanton"/>
+            <output message="tns:getCantonResponse"/>
+        </operation>
+        <operation name="getParroquia">
+            <input message="tns:getParroquia"/>
+            <output message="tns:getParroquiaResponse"/>
+        </operation>
+        <operation name="getOrdenPedido">
+            <input message="tns:getOrdenPedido"/>
+            <output message="tns:getOrdenPedidoResponse"/>
+        </operation>
+        <operation name="getComprobantesRetencion">
+            <input message="tns:getComprobantesRetencion"/>
+            <output message="tns:getComprobantesRetencionResponse"/>
+        </operation>
+        <operation name="getCias">
+            <input message="tns:getCias"/>
+            <output message="tns:getCiasResponse"/>
+        </operation>
+        <operation name="getCiasUsuario">
+            <input message="tns:getCiasUsuario"/>
+            <output message="tns:getCiasUsuarioResponse"/>
+        </operation>
+        <operation name="getTaxRetencionCliente">
+            <input message="tns:getTaxRetencionCliente"/>
+            <output message="tns:getTaxRetencionClienteResponse"/>
+        </operation>
+        <operation name="UpdateTaxRetencionCliente">
+            <input message="tns:UpdateTaxRetencionCliente"/>
+            <output message="tns:UpdateTaxRetencionClienteResponse"/>
+        </operation>
+        <operation name="insertTaxRetencionCliente">
+            <input message="tns:insertTaxRetencionCliente"/>
+            <output message="tns:insertTaxRetencionClienteResponse"/>
+        </operation>
+        <operation name="getClientes">
+            <input message="tns:getClientes"/>
+            <output message="tns:getClientesResponse"/>
+        </operation>
+        <operation name="getTipoInventario">
+            <input message="tns:getTipoInventario"/>
+            <output message="tns:getTipoInventarioResponse"/>
+        </operation>
+        <operation name="getCountLog">
+            <input message="tns:getCountLog"/>
+            <output message="tns:getCountLogResponse"/>
+        </operation>
+        <operation name="test">
+            <input message="tns:test"/>
+            <output message="tns:testResponse"/>
+        </operation>
+    </portType>
+    <binding name="wsMainPortBinding" type="tns:wsMain">
+        <operation name="traerListaGuias">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="traerArchivoVentas">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="traerValidacionShipment">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="erroresCuentasPorCobrar">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="obtenerCostos">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="insertUpdateCliente">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getCliente">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="consultaNaturaleza">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="updateNaturaleza">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="consultaRetencion">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="updateRetencion">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getProvincia">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getCanton">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getParroquia">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getOrdenPedido">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getComprobantesRetencion">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getCias">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getCiasUsuario">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getTaxRetencionCliente">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="UpdateTaxRetencionCliente">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="insertTaxRetencionCliente">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getClientes">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getTipoInventario">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getCountLog">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="test">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="wsMain">
+        <port name="wsMainPort" binding="tns:wsMainPortBinding"/>
+    </service>
+</definitions>
